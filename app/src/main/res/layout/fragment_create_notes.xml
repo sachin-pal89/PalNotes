@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".ui.fragments.CreateNotesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="380dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/textview_background"
+            android:hint="@string/title"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="380dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textview_background"
+            android:hint="@string/subject"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subject">
+
+            <ImageView
+                android:id="@+id/greenDots"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/green_dot"
+                />
+
+            <ImageView
+                android:id="@+id/yellowDots"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/yellow_dot"
+                />
+
+            <ImageView
+                android:id="@+id/redDots"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/red_dot"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="378dp"
+            android:layout_height="325dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/textview_background"
+            android:gravity="start"
+            android:hint="@string/notes"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dots"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="RtlSymmetry" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="36dp"
+            android:backgroundTint="@color/notes"
+            android:src="@drawable/ic_baseline_check_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

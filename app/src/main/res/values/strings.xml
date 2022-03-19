@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pal Notes</string>
+    <string name="pal_notes">Pal Notes</string>
+    <string name="by">By</string>
+    <string name="sachin_pal">Sachin Pal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_wala_fragment">Home Wala Fragment</string>
+    <string name="title">Title..</string>
+    <string name="subject">Subject</string>
+    <string name="notes">Notes..</string>
+    <string name="_01_01_2003">01/01/2003</string>
+    <string name="_01_jan_2003">01 JAN 2003</string>
+</resources>
